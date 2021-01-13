@@ -1,0 +1,588 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+    <meta property="article:modified_time" content="2021-01-10T18:50:51-05:00" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Software Tips and Tricks &mdash; Galloway Lab Protocols  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="On Terminals and Shells" href="the_shell.html" />
+    <link rel="prev" title="An introduction to Git" href="git_intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2c6854" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Galloway Lab Protocols
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../protocols/index.html">Protocols</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/analytics/index.html">Analytical protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/atac_see.html">ATAC-see</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/atac_see.html#transposase-buffer-preparation">Transposase buffer preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/atac_see.html#id1">ATAC-see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/attune_operation.html">Attune operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#startup">Startup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#cleaning">Cleaning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#performance-check">Performance Check</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#maintainence">Maintainence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html">Single cell qPCR</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#single-cell-acquisition">Single-cell acquisition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#lysis-reverse-transcription-rt-and-specific-target-amplification-sta">Lysis, reverse transcription (RT), and specific target amplification (STA)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#single-cell-qpcr-on-fluidigm-biomark">Single-cell qPCR on Fluidigm Biomark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/cloning/index.html">Cloning protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/gibson.html">Gibson assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/gibson.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html">LR cloning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html#expected-results">Expected results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/transformation.html">Bacterial transformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/transformation.html#cloning-summary">Cloning summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/transformation.html#heat-shock-transformation-chemically-competent-bacteria">Heat-shock transformation (chemically competent bacteria)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/protein_production/index.html">Protein production</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html">Protein gel casting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#required-stock-solutions">Required stock solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#casting-protocol">Casting protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#gel-casting-setup">Gel casting setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html">Chitin-binding protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#regeneration-protocol">Regeneration Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html">Denaturing protein gel run and staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#solutions-required">Solutions required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#running-procedure">Running procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#staining">Staining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/protein_expression.html">Protein expression</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_expression.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html">His-tag protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#id1">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/tc/index.html">TC protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html">Adherent Cell Culture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#general-culture-handling-procedure">General culture handling procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#changing-media">Changing media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#passaging-cells">Passaging cells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/adherent_staining.html">Adherent Cell Staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_staining.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/cryopreservation.html">Cryopreservation of mammalian cells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/cryopreservation.html#cryopreservation-medium-should-always-be-made-fresh">Cryopreservation Medium (should always be made fresh)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/good_practices.html">Important Tissue Culture Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/media.html">Tissue Culture Media</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#fetal-bovine-serum-fbs-aliquots">Fetal Bovine Serum (FBS) Aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#pen-strep-aliquots">Pen-strep aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#preparation-of-basic-2d-cell-culture-media-dmem-10-fbs-1-pen-strep">Preparation of basic 2D cell culture media ( DMEM + 10% FBS +1% Pen-strep)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html">Plat-E Retroviral Transduction of MEFs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html#plat-e-transfection">Plat-E Transfection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html#transduction-of-mouse-embryonic-fibroblasts-mefs">Transduction of Mouse Embryonic Fibroblasts (MEFs)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/transient_transfection.html">Transient 293T Transfection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/transient_transfection.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/virus_concentration.html">Virus concentration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/virus_concentration.html#protocol">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes/index.html">Recipes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/bacteria/index.html">Bacterial recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html">Antibiotic Stock Recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-ampicillin-amp">1000X Ampicillin (Amp)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-kanamycin-kan">1000X Kanamycin (Kan)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-chloramphenicol-chlor">1000X Chloramphenicol (Chlor)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/media.html">Bacterial media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#tb-terrific-broth">TB (Terrific Broth)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#x-tb-salts">10x TB salts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/tc/index.html">TC recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/tc/media.html">TC media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#n3-media">N3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#mef-media">MEF media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-1-media">Breast cancer 1 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-2-media">Breast cancer 2 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-3-media">Breast cancer 3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-4-media">Breast cancer 4 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#glia-media">Glia media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#sorting-media">Sorting media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#collection-media">Collection media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#dissociation-media">Dissociation media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#freezing-media">Freezing media</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech/index.html">Tech documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tech/repo_setup.html">Repository setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Bootcamp</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IAP Bootcamp</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="TC.html">Tissue culture basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="day_0_setup.html">Day 0: Software and training setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="day_0_setup.html#ehs-setup-and-trainings">EHS setup and trainings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="day_0_setup.html#software-and-webservices">Software and webservices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="git_intro.html">An introduction to Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="git_intro.html#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="git_intro.html#git-by-example">Git by example</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Software Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#one-date-format-to-rule-them-all-naming">One date format to rule them all/naming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paper-rss-feeds">Paper RSS feeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#creating-feeds-from-searches">Creating feeds from searches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zotero">Zotero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#better-quartzy">Better Quartzy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#regex-help">Regex help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fonts">Fonts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="the_shell.html">On Terminals and Shells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#the-basics">The basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#interface-basics">Interface basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#starting-off-at-home">Starting off at home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#moving-away-from-home">Moving away from home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#relative-and-absolute-paths">Relative and absolute paths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#file-operations">File operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#editing-and-viewing-files">Editing and viewing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#finding-things-in-documents">Finding things in documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#exercise">Exercise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#extras">Extras</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributor_guide.html">Contributor guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-environment-setup">Local environment setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#text-editor">Text editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#python-sphinx">Python/Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#git">git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-building">Local building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#online-editing-through-github">Online editing through Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#repository-layout">Repository layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#basics-of-restructuredtext">Basics of reStructuredText</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#simple-markup">Simple markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#explicit-markup">Explicit markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#admonitions">Admonitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#code">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#references-and-links">References and links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#images">Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#math">Math</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Galloway Lab Protocols</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Bootcamp</a> &raquo;</li>
+        
+          <li><a href="index.html">IAP Bootcamp</a> &raquo;</li>
+        
+      <li>Software Tips and Tricks</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/bootcamp/iap/software_tips_and_tricks.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software-tips-and-tricks">
+<h1>Software Tips and Tricks<a class="headerlink" href="#software-tips-and-tricks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="one-date-format-to-rule-them-all-naming">
+<h2>One date format to rule them all/naming<a class="headerlink" href="#one-date-format-to-rule-them-all-naming" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id1">
+<a class="reference external image-reference" href="https://imgs.xkcd.com/comics/iso_8601.png"><img alt="https://imgs.xkcd.com/comics/iso_8601.png" src="https://imgs.xkcd.com/comics/iso_8601.png" /></a>
+<p class="caption"><span class="caption-text">Courtesy of <a class="reference external" href="https://xkcd.com/1179/">xkcd</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>In file naming schemes, we typically use the <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> format. The separators
+don’t typically matter, you could use dashes or underscores or periods.</p>
+<p>This date format is both unambiguous and also sorts well (e.g. a lexicographic/alphabetical
+sort sorts in the correct time order).</p>
+<p>Finally, avoid using spaces in file and directory names! It’s not a problem for most
+code, but it’s just a good best practice that makes typing these paths in easier
+in a terminal.</p>
+</div>
+<div class="section" id="paper-rss-feeds">
+<h2>Paper RSS feeds<a class="headerlink" href="#paper-rss-feeds" title="Permalink to this headline">¶</a></h2>
+<p>Staying on top of the firehose of papers can be difficult. Using a RSS (Really Simple Syndication)
+aggregator can be helpful. RSS is a relatively old technology that allows for websites
+to push lists of content over time; the first podcasts were actually syndicated/released using RSS.</p>
+<p>Most journals have RSS feeds; you can find it by searching for a journal name + <code class="docutils literal notranslate"><span class="pre">rss</span></code>,
+or by looking around with the RSS icon: <a class="reference internal" href="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png"><img alt="rss_icon" class="align-middle" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/128px-Feed-icon.svg.png" style="height: 2.0ex;" /></a></p>
+<p>For example, the main Nature feed lives at <a class="reference external" href="http://feeds.nature.com/nature/rss/current">http://feeds.nature.com/nature/rss/current</a>.</p>
+<p>After finding some feeds you are interested in, you likely want to use a <strong>feed aggregator</strong>, something
+that combines all of the new pushed papers into a single feed. A very popular feed aggregator is
+<a class="reference external" href="https://www.feedly.com/">Feedly</a>. It has a website and mobile apps. The free version is more than
+sufficient for most purposes; it lets you combine up to 100 RSS feeds into 3 separate feeds.</p>
+<p>You can also view feeds directly in Zotero! If you export your feed list from Feedly as a OPML
+file, you can also direct-import it into Zotero.</p>
+<img alt="../../_images/zotero_feeds.png" class="align-center" src="../../_images/zotero_feeds.png" />
+</div>
+<div class="section" id="creating-feeds-from-searches">
+<h2>Creating feeds from searches<a class="headerlink" href="#creating-feeds-from-searches" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes you want to have a feed of papers matching some search terms. You can easily do this
+with Pubmed and ProQuest; whenever a new paper that matches your search terms
+gets added, it will get added to your RSS feed aggregator. Unfortunately, Google Scholar
+does not allow you to create RSS feeds (this would easily enable competition with their
+services).</p>
+<p>For Pubmed searches, start at <a class="reference external" href="https://pubmed.gov">https://pubmed.gov</a>, and design your search. You may want
+to be pickier; a search for just <code class="docutils literal notranslate"><span class="pre">p53</span></code> is going to return a lot of junk!</p>
+<p>After you have a search of your liking, click the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">RSS</span></code> button, and bump up the
+returned number of items to 100. Then, you can directly use that feed URL in Feedly or Zotero!</p>
+<img alt="../../_images/pubmed_rss.png" src="../../_images/pubmed_rss.png" />
+<p>To add a Proquest feed, you can go to <a class="reference external" href="https://search.proquest.com">https://search.proquest.com</a>, make a search, then click the
+“Save search/alert” button to create a RSS feed:</p>
+<img alt="../../_images/proquest_rss.png" class="align-center" src="../../_images/proquest_rss.png" />
+<p>However, because Proquest is a MIT-sponsored database, you may have trouble accessing feed items
+outside of the MIT network.</p>
+</div>
+<div class="section" id="zotero">
+<h2>Zotero<a class="headerlink" href="#zotero" title="Permalink to this headline">¶</a></h2>
+<p>There are several built-in features of Zotero that make paper reading more efficient.</p>
+<ol class="arabic">
+<li><p><strong>Color tags</strong>: Zotero sometimes adds automatic tags based on article metadata, but you can also add tags of your own under
+the details menu. In addition, you can select up to 9 tags at any one time as quick/color tags. In the tag menu
+in the bottom left, right clicking on a tag lets you assign a number and a color; tagged entries will have small
+colored squares viewable at a glance.</p>
+<img alt="../../_images/zotero_tag_color.png" class="align-center" src="../../_images/zotero_tag_color.png" />
+</li>
+<li><p><strong>Notes</strong>:  When you add notes through the sidebar, they become fully searchable! You can
+also embed images and other content within notes. This is particularly helpful for summarizing papers; I use the
+following note template:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Top</span> <span class="n">line</span> <span class="n">summary</span><span class="p">:</span>
+
+
+<span class="n">What</span> <span class="n">they</span> <span class="n">did</span><span class="o">/</span><span class="n">highlights</span><span class="p">:</span>
+
+<span class="n">Why</span> <span class="n">do</span> <span class="n">we</span> <span class="n">care</span><span class="p">:</span>
+
+<span class="n">Limitations</span><span class="p">:</span>
+
+<span class="n">Extensions</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Full-text searching</strong>: The search bar has several available options through the dropdown. Switching to “everything”
+includes full-text searching of linked PDFs (e.g. it will look for phrases inside every linked PDF)!</p></li>
+<li><p><strong>Tablet syncing</strong>: If you install the Zotfile extension, you can setup automatic transfer and syncing
+with a tablet for annotation purposes. You will need some cloud syncing application (Dropbox, OneDrive, Google Drive)
+that is accessible both on your computer through your annotation app on your tablet. Point ZotFile at this folder,
+and it will automatically check for updates and pull the annotated PDFs back into Zotero.</p>
+<img alt="../../_images/zotero_tablet.png" class="align-center" src="../../_images/zotero_tablet.png" />
+</li>
+</ol>
+</div>
+<div class="section" id="better-quartzy">
+<h2>Better Quartzy<a class="headerlink" href="#better-quartzy" title="Permalink to this headline">¶</a></h2>
+<p>While Quartzy is great for inventory purposes, and the interface for the plasmid
+database isn’t too bad, the web-interface leaves a lot to be desired. By default,
+you can’t really read the plasmid names even after you drag the CAS # field to the
+second position:</p>
+<img alt="../../_images/quartzy_pre_enhancer.png" class="align-center" src="../../_images/quartzy_pre_enhancer.png" />
+<p>To fix this, there is a Quartzy enhancer userscript that makes it look like the following!</p>
+<img alt="../../_images/quartzy_post_enhancer.png" class="align-center" src="../../_images/quartzy_post_enhancer.png" />
+<p>The plasmid field is larger, and the plasmid resistance (Amp/Kan/Chlor) is listed directly
+below the plasmid.</p>
+<p>This feature is implemented using something called <strong>userscripts</strong>; these are small Javascript
+scripts that get injected into webpages; effectively they are mini browser extensions.</p>
+<p>First, you should install a userscript manager like <a class="reference external" href="https://www.tampermonkey.net/">Tampermonkey</a>.</p>
+<p>Then, you should be able to click on this link to add the userscript:
+<a class="reference external" href="https://gist.github.com/meson800/f28e64d532da9b0fe2a1d22480ea5cda/raw/quartzy_enhancer.user.js">https://gist.github.com/meson800/f28e64d532da9b0fe2a1d22480ea5cda/raw/quartzy_enhancer.user.js</a></p>
+<p>or in the Tampermonkey Utilities tab, you can use the <strong>install from URL</strong> option:</p>
+<img alt="../../_images/tampermonkey_install_from_url.png" class="align-center" src="../../_images/tampermonkey_install_from_url.png" />
+</div>
+<div class="section" id="regex-help">
+<h2>Regex help<a class="headerlink" href="#regex-help" title="Permalink to this headline">¶</a></h2>
+<p>If you ever need help debugging or designing a regular expression, try using <a class="reference external" href="https://regex101.com/">https://regex101.com/</a></p>
+</div>
+<div class="section" id="fonts">
+<h2>Fonts<a class="headerlink" href="#fonts" title="Permalink to this headline">¶</a></h2>
+<p>Helvetica Neue is a good sans-serif font that is based on everyone’s favorite font, Helvetica.
+Download it <a class="reference external" href="../../_static/iap_files/HelveticaNeue.zip">here</a>.</p>
+<p>For a good monospaced/code/terminal font, <a class="reference external" href="https://github.com/tonsky/FiraCode/releases">Fira Code</a> is excellent.
+Besides looking nice, Fira Code has something called <strong>font ligatures</strong>. These are originally defined for special
+letter combinations, like æ for adjacent ae. In Fira Code, common programming combinations are given
+special ligature symbols that appear as you type normally. You often have to enable ligatures in the editor
+you are using.</p>
+<img alt="../../_images/fira_code.png" class="align-center" src="../../_images/fira_code.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Galloway Lab. Shared under the Creative Commons 4.0 Attribution International license.
+      <span class="lastupdated">
+        Last updated on Jan 10, 2021.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Downloads and versions</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+           <strong> 
+          <dd><a href="/protocols/en/latest/">latest</a></dd>
+           </strong> 
+        
+          
+          <dd><a href="/protocols/en/tech_wip/">tech_wip</a></dd>
+          
+        
+          
+          <dd><a href="/protocols/en//"></a></dd>
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="/protocols/en/latest/galloway_lab_protocols.pdf">pdf</a></dd>
+        
+      </dl>
+      
+      
+      <hr/>
+      Hosted with <span class="fa fa-heart"></span> on GitHub Pages.
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

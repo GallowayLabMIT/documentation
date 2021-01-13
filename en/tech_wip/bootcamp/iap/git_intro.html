@@ -1,0 +1,733 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+    <meta property="article:modified_time" content="2021-01-03T23:41:52-05:00" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>An introduction to Git &mdash; Galloway Lab Protocols  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Software Tips and Tricks" href="software_tips_and_tricks.html" />
+    <link rel="prev" title="Day 0: Software and training setup" href="day_0_setup.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2c6854" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Galloway Lab Protocols
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                tech_wip
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../protocols/index.html">Protocols</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/analytics/index.html">Analytical protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/atac_see.html">ATAC-see</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/atac_see.html#transposase-buffer-preparation">Transposase buffer preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/atac_see.html#id1">ATAC-see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/attune_operation.html">Attune operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#startup">Startup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#cleaning">Cleaning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#performance-check">Performance Check</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/attune_operation.html#maintainence">Maintainence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html">Single cell qPCR</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#single-cell-acquisition">Single-cell acquisition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#lysis-reverse-transcription-rt-and-specific-target-amplification-sta">Lysis, reverse transcription (RT), and specific target amplification (STA)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/analytics/single_cell_qpcr.html#single-cell-qpcr-on-fluidigm-biomark">Single-cell qPCR on Fluidigm Biomark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/cloning/index.html">Cloning protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/gibson.html">Gibson assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/gibson.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html">LR cloning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/lr_cloning.html#expected-results">Expected results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/cloning/transformation.html">Bacterial transformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/transformation.html#cloning-summary">Cloning summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/cloning/transformation.html#heat-shock-transformation-chemically-competent-bacteria">Heat-shock transformation (chemically competent bacteria)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/protein_production/index.html">Protein production</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html">Protein gel casting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#required-stock-solutions">Required stock solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#casting-protocol">Casting protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/bis_tris_protein_gels.html#gel-casting-setup">Gel casting setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html">Chitin-binding protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/chitin_protein_purification.html#regeneration-protocol">Regeneration Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html">Denaturing protein gel run and staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#solutions-required">Solutions required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#running-procedure">Running procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/denaturing_protein_gel.html#staining">Staining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/protein_expression.html">Protein expression</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_expression.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html">His-tag protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/protein_production/protein_purification.html#id1">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../protocols/tc/index.html">TC protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html">Adherent Cell Culture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#general-culture-handling-procedure">General culture handling procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#changing-media">Changing media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_cell_culture.html#passaging-cells">Passaging cells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/adherent_staining.html">Adherent Cell Staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/adherent_staining.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/cryopreservation.html">Cryopreservation of mammalian cells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/cryopreservation.html#cryopreservation-medium-should-always-be-made-fresh">Cryopreservation Medium (should always be made fresh)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/good_practices.html">Important Tissue Culture Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/media.html">Tissue Culture Media</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#fetal-bovine-serum-fbs-aliquots">Fetal Bovine Serum (FBS) Aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#pen-strep-aliquots">Pen-strep aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/media.html#preparation-of-basic-2d-cell-culture-media-dmem-10-fbs-1-pen-strep">Preparation of basic 2D cell culture media ( DMEM + 10% FBS +1% Pen-strep)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html">Plat-E Retroviral Transduction of MEFs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html#plat-e-transfection">Plat-E Transfection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/plat_e_transfection.html#transduction-of-mouse-embryonic-fibroblasts-mefs">Transduction of Mouse Embryonic Fibroblasts (MEFs)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/transient_transfection.html">Transient 293T Transfection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/transient_transfection.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../protocols/tc/virus_concentration.html">Virus concentration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../protocols/tc/virus_concentration.html#protocol">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes/index.html">Recipes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/bacteria/index.html">Bacterial recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html">Antibiotic Stock Recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-ampicillin-amp">1000X Ampicillin (Amp)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-kanamycin-kan">1000X Kanamycin (Kan)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-chloramphenicol-chlor">1000X Chloramphenicol (Chlor)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/media.html">Bacterial media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#tb-terrific-broth">TB (Terrific Broth)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#x-tb-salts">10x TB salts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/tc/index.html">TC recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/tc/media.html">TC media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#n3-media">N3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#mef-media">MEF media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-1-media">Breast cancer 1 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-2-media">Breast cancer 2 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-3-media">Breast cancer 3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-4-media">Breast cancer 4 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#glia-media">Glia media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#sorting-media">Sorting media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#collection-media">Collection media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#dissociation-media">Dissociation media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#freezing-media">Freezing media</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech/index.html">Tech documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tech/repo_setup.html">Repository setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Bootcamp</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">IAP Bootcamp</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="TC.html">Tissue culture basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="day_0_setup.html">Day 0: Software and training setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="day_0_setup.html#ehs-setup-and-trainings">EHS setup and trainings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="day_0_setup.html#software-and-webservices">Software and webservices</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">An introduction to Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#git-by-example">Git by example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="software_tips_and_tricks.html">Software Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#one-date-format-to-rule-them-all-naming">One date format to rule them all/naming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#paper-rss-feeds">Paper RSS feeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#creating-feeds-from-searches">Creating feeds from searches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#zotero">Zotero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#better-quartzy">Better Quartzy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#regex-help">Regex help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="software_tips_and_tricks.html#fonts">Fonts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="the_shell.html">On Terminals and Shells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#the-basics">The basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#interface-basics">Interface basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#starting-off-at-home">Starting off at home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#moving-away-from-home">Moving away from home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#relative-and-absolute-paths">Relative and absolute paths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#file-operations">File operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#editing-and-viewing-files">Editing and viewing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#finding-things-in-documents">Finding things in documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#exercise">Exercise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="the_shell.html#extras">Extras</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributor_guide.html">Contributor guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-environment-setup">Local environment setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#text-editor">Text editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#python-sphinx">Python/Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#git">git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-building">Local building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#online-editing-through-github">Online editing through Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#repository-layout">Repository layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#basics-of-restructuredtext">Basics of reStructuredText</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#simple-markup">Simple markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#explicit-markup">Explicit markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#admonitions">Admonitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#code">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#references-and-links">References and links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#images">Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#math">Math</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Galloway Lab Protocols</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Bootcamp</a> &raquo;</li>
+        
+          <li><a href="index.html">IAP Bootcamp</a> &raquo;</li>
+        
+      <li>An introduction to Git</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/bootcamp/iap/git_intro.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="an-introduction-to-git">
+<h1>An introduction to Git<a class="headerlink" href="#an-introduction-to-git" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>Even if you haven’t used version control software before, you have probably encountered two
+types of version control:</p>
+<ol class="arabic simple">
+<li><p>Linear time-based snapshots. This can either be manually done (e.g. you append a
+date to documents and copy files when you want to make a new version), or automatically
+done (e.g. you are storing documents in Dropbox, and it stores time snapshots for the
+last 30 days automatically).</p></li>
+<li><p>Online, live multi-person editing, like in Overleaf and Google Drive.</p></li>
+</ol>
+<p>These techniques are useful, but have limitations. Time-based snapshots often fail if you want
+to have multiple people editing simultaneously without massive headaches, and online live editing
+only works if you have permanent internet access, intermediate states are meaningful (e.g. saving
+mid-sentence is fine for manuscripts, but would throw a syntax error for code), and you don’t
+actually care about saving a detailed history.</p>
+<p>For us, having robust version control without these limitations makes our coding work easier to share,
+easier to reproduce (how do you regenerate a plot made with a previous code version you
+didn’t know you needed?), and easier to do shared work.</p>
+<p>In the CS community, this is a solved problem; the field has coalesced around using the
+version control system called <code class="docutils literal notranslate"><span class="pre">git</span></code>. There are competing version control systems, including
+Subversion, Mercurial, and Fossil, but <code class="docutils literal notranslate"><span class="pre">git</span></code> has emerged as the clear winner with the emergence
+of supporting webservices Github, Sourceforge, GitLab, and others.</p>
+<p>Unfortunately for us, <code class="docutils literal notranslate"><span class="pre">git</span></code> is also by far the most powerful and complicated version control system,
+so before jumping into <code class="docutils literal notranslate"><span class="pre">git</span></code> commands, let’s consider an example:</p>
+<blockquote>
+<div><p>Git is a simple, but extremely powerful system. Most people try to teach
+Git by demonstrating a few dozen commands and then yelling “tadaaaaa.”
+I believe this method is flawed. Such a treatment may leave you with the ability
+to use Git to perform simple tasks, but the Git commands will still feel like
+magical incantations. Doing anything out of the ordinary will be terrifying.
+Until you understand the concepts upon which Git is built, you’ll feel like a
+stranger in a foreign land.</p>
+<p class="attribution">—Tom Preston-Werner, <a class="reference external" href="https://tom.preston-werner.com/2009/05/19/the-git-parable.html">The Git Parable</a></p>
+</div></blockquote>
+<p>Say you are trying to do version control for files related to a paper manuscript.
+You have some figures, and a main <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├─ figure1.ai
+├─ figure2.ai
+└─ manuscript.docx
+</pre></div>
+</div>
+<p>How should you track the version history of this? First create a new directory/folder, which is
+called <code class="docutils literal notranslate"><span class="pre">working</span></code> here, as it is the directory you would be actively working on/editing.</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+└─ working
+   ├─ figure1.ai
+   ├─ figure2.ai
+   └─ manuscript.docx
+</pre></div>
+</div>
+<p>After some hacking in Illustrator, you’re happy with the way the figures look. To save this version, you
+just copy the entire working folder to a <code class="docutils literal notranslate"><span class="pre">snapshot-01</span></code> folder and promise yourself that you won’t further
+edit what is inside the snapshot folders.</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  └─ manuscript.docx
+└─ working
+   ├─ figure1.ai
+   ├─ figure2.ai
+   └─ manuscript.docx
+</pre></div>
+</div>
+<p>After you do some more work, (some directories are shown collapsed, without showing content), such
+as adding new figures, you might have lots of snapshots:</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│─ snapshot-02
+│─ snapshot-03
+│─ snapshot-04
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+└─ working
+   ├─ figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ manuscript.docx
+</pre></div>
+</div>
+<p>How are you supposed to remember what we changed in each of these? To help yourself,
+you decide to add a new file, <code class="docutils literal notranslate"><span class="pre">message.txt</span></code> to each snapshot created. Inside the message,
+you decide to add the date, our name, and some free-form message that describes what happened
+in that version snapshot. A <code class="docutils literal notranslate"><span class="pre">message.txt</span></code> might look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Author: Christopher Johnstone &lt;cjohnsto@mit.edu&gt;
+Date:   Jan 11 2021
+
+    Made Figure 3 300% more aesthetic!
+</pre></div>
+</div>
+<p>The snapshots now look like the following.
+Note that we add the <code class="docutils literal notranslate"><span class="pre">message.txt</span></code> after we copy the working folder to a new snapshot folder.</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│─ snapshot-02
+│─ snapshot-03
+│─ snapshot-04
+│─ snapshot-05
+│  ├─ message.txt
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+└─ working
+   ├─ figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ manuscript.docx
+</pre></div>
+</div>
+<p>After some more work, you end up revising the manuscript while also trying out a new
+revision of <code class="docutils literal notranslate"><span class="pre">figure1.ai</span></code>. You want to save your updated manuscript version, but the
+figure isn’t quite ready yet. How do we save the manuscript edits into a snapshot while
+leaving the in-progress figure edits out of the snapshot? There isn’t an obvious
+way to do this with this folder setup, so you decide to make another special directory
+called <code class="docutils literal notranslate"><span class="pre">stage</span></code> (as in a stage to set and later snapshot).</p>
+<p>With the edits marked with a <code class="docutils literal notranslate"><span class="pre">*</span></code>, we initially have:</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│─ snapshot-02
+│─ snapshot-03
+│─ snapshot-04
+│─ snapshot-05
+│  ├─ message.txt
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+│─ stage
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+└─ working
+   ├─ *figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ *manuscript.docx
+</pre></div>
+</div>
+<p>Now instead of directly copying the <code class="docutils literal notranslate"><span class="pre">working</span></code> folder into a snapshot, we first
+copy the changes we want into <code class="docutils literal notranslate"><span class="pre">stage</span></code>, while leaving files we are still actively
+editing in <code class="docutils literal notranslate"><span class="pre">working</span></code>. Copying the modified manuscript to <code class="docutils literal notranslate"><span class="pre">stage</span></code>:</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│─ snapshot-02
+│─ snapshot-03
+│─ snapshot-04
+│─ snapshot-05
+│  ├─ message.txt
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+│─ stage
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ *manuscript.docx
+└─ working
+   ├─ *figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ *manuscript.docx
+</pre></div>
+</div>
+<p>then we make a new snapshot from <code class="docutils literal notranslate"><span class="pre">stage</span></code>:</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshot-01
+│─ snapshot-02
+│─ snapshot-03
+│─ snapshot-04
+│─ snapshot-05
+│  ├─ message.txt
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ manuscript.docx
+│─ snapshot-06
+│  ├─ message.txt
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ *manuscript.docx
+│─ stage
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ *manuscript.docx
+└─ working
+   ├─ *figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ *manuscript.docx
+</pre></div>
+</div>
+<p>Finally, this whole setup seems to be working well, and you want to go share your work
+with fellow lab-mates. While you could just copy the entire folder and share created
+snapshots, this would be inherently linear; only one person could work on this at a
+certain time! To solve these issues, among others, you decide to assign arbitrary, unique
+names to snapshots, such as <code class="docutils literal notranslate"><span class="pre">2a8aba</span></code>. With these arbitrary names, it’s hard to tell what
+order you made the snapshots in, so you also add a <code class="docutils literal notranslate"><span class="pre">parent</span></code> field.</p>
+<div class="box-spacing-override highlight-default notranslate"><div class="highlight"><pre><span></span>.
+│─ snapshots
+│  ├─ c3612a
+│  │─ 86ac2d
+│  │─ acd748
+│  │─ fb9742
+│  │─ 12d276
+│  │  ├─ message.txt
+│  │  ├─ figure1.ai
+│  │  ├─ figure2.ai
+│  │  ├─ figure3.ai
+│  │  └─ manuscript.docx
+│  └─ 2a8aba
+│     ├─ message.txt
+│     ├─ figure1.ai
+│     ├─ figure2.ai
+│     ├─ figure3.ai
+│     └─ *manuscript.docx
+│─ stage
+│  ├─ figure1.ai
+│  ├─ figure2.ai
+│  ├─ figure3.ai
+│  └─ *manuscript.docx
+└─ working
+   ├─ *figure1.ai
+   ├─ figure2.ai
+   ├─ figure3.ai
+   └─ *manuscript.docx
+</pre></div>
+</div>
+<p>After this renaming, the most recent <code class="docutils literal notranslate"><span class="pre">message.txt</span></code> (in <code class="docutils literal notranslate"><span class="pre">snapshot-06</span></code>, renamed to <code class="docutils literal notranslate"><span class="pre">2a8aba</span></code>)
+could read:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Snapshot</span><span class="p">:</span> <span class="mi">2</span><span class="n">a8aba</span>
+<span class="n">Parent</span><span class="p">:</span> <span class="mi">12</span><span class="n">d276</span>
+<span class="n">Author</span><span class="p">:</span> <span class="n">Christopher</span> <span class="n">Johnstone</span> <span class="o">&lt;</span><span class="n">cjohnsto</span><span class="nd">@mit</span><span class="o">.</span><span class="n">edu</span><span class="o">&gt;</span>
+<span class="n">Date</span><span class="p">:</span>   <span class="n">Jan</span> <span class="mi">12</span> <span class="mi">2021</span>
+
+    <span class="n">Updated</span> <span class="n">the</span> <span class="n">manuscript</span> <span class="k">with</span> <span class="n">method</span> <span class="n">details</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>We’re almost ready to jump into Git; the last thing to note from this example is that specifying
+parents of snapshots means that we no longer (necessarily) have a linear history; instead,
+the history forms a tree (a graph without cycles). Trees have nice properties, like always being
+able to determine all of your ancestors.</p>
+</div>
+<div class="section" id="git-by-example">
+<h2>Git by example<a class="headerlink" href="#git-by-example" title="Permalink to this headline">¶</a></h2>
+<p>Heavily inspired by the <a class="reference external" href="https://swcarpentry.github.io/git-novice">Software Carpentry Git lesson</a>,
+we will start you off learning Git by editing the very repository we are working on!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is a</p>
+</div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pip install sphinx sphinx-rtd-theme sphinx-last-updated-by-git
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Galloway Lab. Shared under the Creative Commons 4.0 Attribution International license.
+      <span class="lastupdated">
+        Last updated on Jan 03, 2021.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Downloads and versions</span>
+      v: tech_wip
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+          
+          <dd><a href="/protocols/en/latest/">latest</a></dd>
+          
+        
+           <strong> 
+          <dd><a href="/protocols/en/tech_wip/">tech_wip</a></dd>
+           </strong> 
+        
+          
+          <dd><a href="/protocols/en//"></a></dd>
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="/protocols/en/tech_wip/galloway_lab_protocols.pdf">pdf</a></dd>
+        
+      </dl>
+      
+      
+      <hr/>
+      Hosted with <span class="fa fa-heart"></span> on GitHub Pages.
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

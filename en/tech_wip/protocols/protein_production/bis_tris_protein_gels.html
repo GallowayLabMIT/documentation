@@ -1,0 +1,640 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+    <meta property="article:modified_time" content="2020-09-29T12:30:50-04:00" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Protein gel casting &mdash; Galloway Lab Protocols  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chitin-binding protein purification" href="chitin_protein_purification.html" />
+    <link rel="prev" title="Protein production" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2c6854" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Galloway Lab Protocols
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                tech_wip
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Protocols</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../analytics/index.html">Analytical protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../analytics/atac_see.html">ATAC-see</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/atac_see.html#transposase-buffer-preparation">Transposase buffer preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/atac_see.html#id1">ATAC-see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../analytics/attune_operation.html">Attune operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/attune_operation.html#startup">Startup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/attune_operation.html#cleaning">Cleaning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/attune_operation.html#performance-check">Performance Check</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/attune_operation.html#maintainence">Maintainence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../analytics/single_cell_qpcr.html">Single cell qPCR</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/single_cell_qpcr.html#single-cell-acquisition">Single-cell acquisition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/single_cell_qpcr.html#lysis-reverse-transcription-rt-and-specific-target-amplification-sta">Lysis, reverse transcription (RT), and specific target amplification (STA)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../analytics/single_cell_qpcr.html#single-cell-qpcr-on-fluidigm-biomark">Single-cell qPCR on Fluidigm Biomark</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../cloning/index.html">Cloning protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../cloning/gibson.html">Gibson assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cloning/gibson.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cloning/lr_cloning.html">LR cloning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cloning/lr_cloning.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cloning/lr_cloning.html#expected-results">Expected results</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../cloning/transformation.html">Bacterial transformation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../cloning/transformation.html#cloning-summary">Cloning summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../cloning/transformation.html#heat-shock-transformation-chemically-competent-bacteria">Heat-shock transformation (chemically competent bacteria)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Protein production</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Protein gel casting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#required-stock-solutions">Required stock solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#casting-protocol">Casting protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gel-casting-setup">Gel casting setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chitin_protein_purification.html">Chitin-binding protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chitin_protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chitin_protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="chitin_protein_purification.html#regeneration-protocol">Regeneration Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="denaturing_protein_gel.html">Denaturing protein gel run and staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="denaturing_protein_gel.html#solutions-required">Solutions required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="denaturing_protein_gel.html#running-procedure">Running procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="denaturing_protein_gel.html#staining">Staining</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="protein_expression.html">Protein expression</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="protein_expression.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="protein_purification.html">His-tag protein purification</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="protein_purification.html#required-solutions">Required solutions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="protein_purification.html#protocol">Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="protein_purification.html#id1">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tc/index.html">TC protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tc/adherent_cell_culture.html">Adherent Cell Culture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/adherent_cell_culture.html#general-culture-handling-procedure">General culture handling procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tc/adherent_cell_culture.html#changing-media">Changing media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tc/adherent_cell_culture.html#passaging-cells">Passaging cells</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/adherent_staining.html">Adherent Cell Staining</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/adherent_staining.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/cryopreservation.html">Cryopreservation of mammalian cells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/cryopreservation.html#cryopreservation-medium-should-always-be-made-fresh">Cryopreservation Medium (should always be made fresh)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/good_practices.html">Important Tissue Culture Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/media.html">Tissue Culture Media</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/media.html#fetal-bovine-serum-fbs-aliquots">Fetal Bovine Serum (FBS) Aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tc/media.html#pen-strep-aliquots">Pen-strep aliquots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tc/media.html#preparation-of-basic-2d-cell-culture-media-dmem-10-fbs-1-pen-strep">Preparation of basic 2D cell culture media ( DMEM + 10% FBS +1% Pen-strep)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/plat_e_transfection.html">Plat-E Retroviral Transduction of MEFs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/plat_e_transfection.html#plat-e-transfection">Plat-E Transfection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tc/plat_e_transfection.html#transduction-of-mouse-embryonic-fibroblasts-mefs">Transduction of Mouse Embryonic Fibroblasts (MEFs)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/transient_transfection.html">Transient 293T Transfection</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/transient_transfection.html#protocol">Protocol</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tc/virus_concentration.html">Virus concentration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tc/virus_concentration.html#protocol">Protocol</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../recipes/index.html">Recipes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/bacteria/index.html">Bacterial recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html">Antibiotic Stock Recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-ampicillin-amp">1000X Ampicillin (Amp)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-kanamycin-kan">1000X Kanamycin (Kan)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/antibiotic_stock.html#x-chloramphenicol-chlor">1000X Chloramphenicol (Chlor)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/bacteria/media.html">Bacterial media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#tb-terrific-broth">TB (Terrific Broth)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/bacteria/media.html#x-tb-salts">10x TB salts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../recipes/tc/index.html">TC recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../recipes/tc/media.html">TC media recipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#n3-media">N3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#mef-media">MEF media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-1-media">Breast cancer 1 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-2-media">Breast cancer 2 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-3-media">Breast cancer 3 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#breast-cancer-4-media">Breast cancer 4 media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#glia-media">Glia media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#sorting-media">Sorting media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#collection-media">Collection media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#dissociation-media">Dissociation media</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../recipes/tc/media.html#freezing-media">Freezing media</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tech/index.html">Tech documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tech/repo_setup.html">Repository setup</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../bootcamp/index.html">Bootcamp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../bootcamp/iap/index.html">IAP Bootcamp</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../bootcamp/iap/TC.html">Tissue culture basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../bootcamp/iap/day_0_setup.html">Day 0: Software and training setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/day_0_setup.html#ehs-setup-and-trainings">EHS setup and trainings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/day_0_setup.html#software-and-webservices">Software and webservices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../bootcamp/iap/git_intro.html">An introduction to Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/git_intro.html#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/git_intro.html#git-by-example">Git by example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html">Software Tips and Tricks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#one-date-format-to-rule-them-all-naming">One date format to rule them all/naming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#paper-rss-feeds">Paper RSS feeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#creating-feeds-from-searches">Creating feeds from searches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#zotero">Zotero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#better-quartzy">Better Quartzy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#regex-help">Regex help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/software_tips_and_tricks.html#fonts">Fonts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../bootcamp/iap/the_shell.html">On Terminals and Shells</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#motivation">Motivation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#the-basics">The basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#interface-basics">Interface basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#starting-off-at-home">Starting off at home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#moving-away-from-home">Moving away from home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#relative-and-absolute-paths">Relative and absolute paths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#file-operations">File operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#editing-and-viewing-files">Editing and viewing files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#finding-things-in-documents">Finding things in documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#exercise">Exercise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../bootcamp/iap/the_shell.html#extras">Extras</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributor_guide.html">Contributor guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-environment-setup">Local environment setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#text-editor">Text editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#python-sphinx">Python/Sphinx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#git">git</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#local-building">Local building</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#online-editing-through-github">Online editing through Github</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#repository-layout">Repository layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributor_guide.html#basics-of-restructuredtext">Basics of reStructuredText</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#simple-markup">Simple markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#explicit-markup">Explicit markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#admonitions">Admonitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#code">Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#tables">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#references-and-links">References and links</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#images">Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../contributor_guide.html#math">Math</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Galloway Lab Protocols</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Protocols</a> &raquo;</li>
+        
+          <li><a href="index.html">Protein production</a> &raquo;</li>
+        
+      <li>Protein gel casting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/protocols/protein_production/bis_tris_protein_gels.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="protein-gel-casting">
+<h1>Protein gel casting<a class="headerlink" href="#protein-gel-casting" title="Permalink to this headline">¶</a></h1>
+<p>The recipes and procedures on this page were originally posted <a class="reference external" href="https://openwetware.org/wiki/Sauer:bis-Tris_SDS-PAGE,_the_very_best">here</a>.</p>
+<div class="section" id="required-stock-solutions">
+<h2>Required stock solutions<a class="headerlink" href="#required-stock-solutions" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><strong>40% Acrylamide stock solution</strong>: Solution of monomers for gel polymerization.</p>
+<p>We find it cheaper to buy premixed 40% stock solution, with a acrylamide:bis-acrylamide
+ratio of 29:1 (3.3%). Stocks with a 37.5:1 ratio also work, and are typically used
+for resolving larger proteins.</p>
+</li>
+<li><p><strong>3x bis-Tris gel buffer</strong>: Ion buffer used in gel casting.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 34%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Concentration</p></th>
+<th class="head"><p>g/L to final concentration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>bis-Tris</p></td>
+<td><p>1 M</p></td>
+<td><p>209.242</p></td>
+</tr>
+<tr class="row-odd"><td><p>HCl</p></td>
+<td><p>Add to pH 6.5-6.8</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p><strong>10% APS</strong>: One of the polymerization initiators. Only a small quantity
+needs to be prepared; each gel only requires 25 uL.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 28%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Concentration</p></th>
+<th class="head"><p>g/L to final concentration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ammonium persulfate</p></td>
+<td><p>10%</p></td>
+<td><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<div class="section" id="casting-protocol">
+<h2>Casting protocol<a class="headerlink" href="#casting-protocol" title="Permalink to this headline">¶</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The acrylamide monomers used here are toxic. Read the
+<a class="reference external" href="https://www.fishersci.com/store/msds?partNumber=BP14081&amp;productDescription=ACRYLAMIDE%3ABISACRYLAMIDE+29%3A1&amp;vendorId=VN00033897&amp;countryCode=US&amp;language=en">SDS</a>.</p>
+<p>Perform polymerization steps with a lab coat in a fume hood, and collect rinse waste in
+a waste container.</p>
+</div>
+<ol class="arabic">
+<li><p>Prepare 1X resolving and stacking buffers. These buffers can be stored
+in the refrigerator for several weeks. Recipes given here for enough for 2 0.75mm gels.</p>
+<p><strong>Resolving buffer:</strong> ~3 mL per gel (6.5 mL total):</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 20%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Volume</p></th>
+<th class="head"><p>Final concentration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3x bis-Tris gel buffer</p></td>
+<td><p>2.2 mL</p></td>
+<td><p>1x</p></td>
+</tr>
+<tr class="row-odd"><td><p>40% Acrylamide stock</p></td>
+<td><p>1.3 mL</p></td>
+<td><p>8%</p></td>
+</tr>
+<tr class="row-even"><td><p>DI water</p></td>
+<td><p>3 mL</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Stacking buffer:</strong>  ~1.2 mL per gel (2.5 mL total):</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 17%" />
+<col style="width: 46%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Volume</p></th>
+<th class="head"><p>Final concentration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3x bis-Tris gel buffer</p></td>
+<td><p>0.83 mL</p></td>
+<td><p>1x</p></td>
+</tr>
+<tr class="row-odd"><td><p>40% Acrylamide stock</p></td>
+<td><p>0.32 mL</p></td>
+<td><p>5%</p></td>
+</tr>
+<tr class="row-even"><td><p>DI water</p></td>
+<td><p>1.36 mL</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Bromophenol blue</p></td>
+<td></td>
+<td><p>50 uL (enough to give color)</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="gel-casting-setup">
+<h2>Gel casting setup<a class="headerlink" href="#gel-casting-setup" title="Permalink to this headline">¶</a></h2>
+<p>In-lab, we have the ability to cast two gels simultaneous; this is recommended even if you only
+need one, so that you have a backup in case of pouring mishaps. Our gel runner also requires two
+poured gels to properly seal.</p>
+<ol class="arabic simple">
+<li><p>Locate two 0.75mm spacer plates and two short glass plates.</p></li>
+<li><p>Use ethanol and a Kimwipe to clean both glass surfaces.</p></li>
+<li><p>Assemble them in the green alignment device.</p></li>
+<li><p>Lock the two gels into the transparent gel pouring device.</p></li>
+</ol>
+<div class="section" id="resolving-gel">
+<h3>Resolving gel<a class="headerlink" href="#resolving-gel" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Measure 6.5 mL of <strong>1x resolving buffer</strong> per gel to pour.</p></li>
+<li><p>Add 50 uL of <strong>10% APS</strong> per gel, mix well.</p></li>
+<li><p>Add 20 uL <strong>TEMED</strong>, mixing quickly. Pour both gels to the resolving gel height (3 mL per gel).
+Lightly tap and tilt the gel to remove any bubbles.</p></li>
+<li><p>Once done pouring, quickly but carefully fill the remaining height with water, making sure the gel-water
+interface stays undisturbed.</p></li>
+<li><p>Wait for the polymerization reaction to finish (noticeable by a change in refractive index).</p></li>
+<li><p>Drain the water by tilting the gel past 90 degrees, and wicking away with a Kimwipe.</p></li>
+</ol>
+</div>
+<div class="section" id="stacking-gel">
+<h3>Stacking gel<a class="headerlink" href="#stacking-gel" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Measure 2.5 mL of <strong>1x stacking buffer</strong> to pour.</p></li>
+<li><p>Add 20 uL of <strong>10% APS</strong>, mix well.</p></li>
+<li><p>Add 10 uL <strong>TEMED</strong>, mixing quickly. Fill the top of the gels until
+just before overflowing. Insert the comb into the top, letting it rest on the spacers.</p></li>
+<li><p>Wait for the stacking gel to polymerize.</p></li>
+<li><p>Rinse with water to remove unpolymerized acrylamide.</p></li>
+<li><p>If removing the combs prior to storage, slowly remove the comb, ensuring that wells are not broken.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Galloway Lab. Shared under the Creative Commons 4.0 Attribution International license.
+      <span class="lastupdated">
+        Last updated on Sep 29, 2020.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Downloads and versions</span>
+      v: tech_wip
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+          
+          <dd><a href="/protocols/en/latest/">latest</a></dd>
+          
+        
+           <strong> 
+          <dd><a href="/protocols/en/tech_wip/">tech_wip</a></dd>
+           </strong> 
+        
+          
+          <dd><a href="/protocols/en//"></a></dd>
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="/protocols/en/tech_wip/galloway_lab_protocols.pdf">pdf</a></dd>
+        
+      </dl>
+      
+      
+      <hr/>
+      Hosted with <span class="fa fa-heart"></span> on GitHub Pages.
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
